@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./pages/layout";
 import './index.css';
-import HomePage from "./pages/HomePage";
-import Products from "./component/products";
+import Homepage from "@/pages/homepage";
+import Product from "./component/products";
+import Login from "./pages/login";
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
           path="/"
           element={
             <Layout>
-              <HomePage />
+              <Homepage/>
             </Layout>
           }
         />
@@ -21,7 +22,15 @@ function App() {
           path="/"
           element={
             <Layout>
-              <Products/>
+              <Product/>
+            </Layout>
+          }
+        />
+        <Route
+          path="/"
+          element={
+            <Layout>
+              <Login/>
             </Layout>
           }
         />

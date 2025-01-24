@@ -54,7 +54,7 @@ const Login = () => {
             </div>
         </form>
         <p className="text-center text-gray-500 text-xs">
-            &copy;2025 IOSPINE. All rights reserved.
+            &copy;2025 DEE_LEGENDS. All rights reserved.
         </p>
     </div>
 </body>
